@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product List</title>
+    <base href = "<?php echo base_url();?>/" />
 </head>
 <body>
-    <a href="/product/add_new">Add New</a>
+    <a href="product/add_new">Add New</a>
     <table>
         <thead>
             <tr>
@@ -22,8 +23,8 @@
                 <td><?= $row['product_name'];?></td>
                 <td><?= $row['product_price'];?></td>
                 <td>
-                    <a href="/product/edit/<?= $row['product_id'];?>">Edit</a>
-                    <a href="/product/delete/<?= $row['product_id'];?>">Delete</a>
+                    <a href="product/edit/<?= $row['product_id'];?>">Edit</a>
+                    <a href="product/delete/<?= $row['product_id'];?>">Delete</a>
                 </td>
             </tr>
         <?php endforeach;?>

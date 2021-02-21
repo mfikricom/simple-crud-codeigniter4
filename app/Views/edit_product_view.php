@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edit Product</title>
+    <base href = "<?php echo base_url();?>/" />
 </head>
 <body>
-    <form action="/product/update" method="post">
+    <form action="product/update" method="post">
         <input type="text" name="product_name" value="<?= $product->product_name;?>">
         <input type="text" name="product_price" value="<?= $product->product_price;?>">
         <input type="hidden" name="product_id" value="<?= $product->product_id;?>">

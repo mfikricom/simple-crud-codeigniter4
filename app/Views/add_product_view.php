@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add New Product</title>
+    <base href = "<?php echo base_url();?>/" />
 </head>
 <body>
-    <form action="/product/save" method="post">
+    <form action="product/save" method="post">
         <input type="text" name="product_name">
         <input type="text" name="product_price">
         <button type="submit">Save</button>
